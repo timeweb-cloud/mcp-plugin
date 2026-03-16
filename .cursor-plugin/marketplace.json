@@ -1,0 +1,19 @@
+{
+  "name": "timeweb-mcp-server",
+  "owner": {
+    "name": "Timeweb Cloud",
+    "email": "info@timeweb.ru"
+  },
+  "metadata": {
+    "description": "Timeweb Cloud MCP Server",
+    "version": "0.1.5",
+    "pluginRoot": "plugins"
+  },
+  "plugins": [
+    {
+      "name": "timeweb-mcp-server",
+      "source": "timeweb-mcp-server",
+      "description": "Timeweb Cloud MCP Server"
+    }
+  ]
+}
