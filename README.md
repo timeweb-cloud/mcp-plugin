@@ -33,7 +33,7 @@ Full list and details: [github.com/timeweb-cloud/mcp-server](https://github.com/
 
 ## Important
 
-After creating an app, set environment variables in the [Timeweb Cloud console](https://timeweb.cloud/my); the MCP server cannot read your local `.env`.
+After creating an app, set environment variables in the [Timeweb Cloud](https://timeweb.cloud/my); the MCP server cannot read your local `.env`.
 
 ## Repository structure
 
@@ -77,23 +77,3 @@ If this works, the plugin will behave the same once installed from the Marketpla
 
 - **Team plan:** Add this repository as a [Team marketplace](https://cursor.com/docs/plugins#add-a-team-marketplace) (Dashboard → Settings → Plugins → Add marketplace → paste repo URL). Then install the plugin from that marketplace and confirm rules, skills, and MCP are active.
 - **Without Team plan:** Open this repo in Cursor and run `node scripts/validate-template.mjs`. Manually testing the MCP server (step 2 above) is enough to confirm the main functionality.
-
-## Submission checklist (for Cursor team)
-
-- [x] Valid `.cursor-plugin/plugin.json` and `.cursor-plugin/marketplace.json`.
-- [x] Plugin name `timeweb-mcp-server` is unique, lowercase, kebab-case.
-- [x] Marketplace entry points to plugin folder under `plugins/`.
-- [x] Frontmatter present in all rule, skill, agent, and command files.
-- [x] Logo at `plugins/timeweb-mcp-server/assets/logo.svg` and referenced in plugin manifest.
-- [x] `node scripts/validate-template.mjs` passes.
-
-## Submitting to Cursor Marketplace
-
-When the repo is ready (e.g. on GitHub):
-
-1. Run `node scripts/validate-template.mjs` and fix any errors.
-2. Send the **repository link** to the Cursor team via [Slack](https://cursor.com) or **kniparko@anysphere.com** for adding the plugin to the Marketplace.
-
-## License
-
-MIT
